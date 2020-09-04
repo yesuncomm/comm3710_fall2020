@@ -120,7 +120,7 @@ All the work we have done to come up with conceptual and operational definitions
 
 
 # Concepts, Dimensions, and Indicators
-In [Steps in Meaning Analysis](https://yesuncomm.github.io/COMM-3710/week3.html#Steps_in_Meaning_Analysis), we introduced two new terms, **dimensions** and **indicators**. For clarity, the three terms and their definitions are listed below. The image beneath that shows an example of each.
+In [Steps in Meaning Analysis](https://yesuncomm.github.io/comm3710_fall2020/week3.html#Steps_in_Meaning_Analysis), we introduced two new terms, **dimensions** and **indicators**. For clarity, the three terms and their definitions are listed below. The image beneath that shows an example of each.
 
 **Concept**: A term or phrase used to identify an object or subject, or to represent a common characteristic of a class of objects or subjects. Concepts are the building blocks of thought and theory.
 
