@@ -183,7 +183,7 @@ Quantitative data can be measured as **categorical/discrete** or **continuous** 
 Click on the tabs below to learn about the four levels of measurement. 
 
 ### Nominal
-*Nominal* measures or variables categorize data into **mutually exclusive** categories. There is no logical order to the variable attributes even though we assign values to them. In other words, the variable values have no logical rank-order. Examples include political partisanship (Democrat, Republican, Independent, other, etc.) and eye color (e.g., blue, brown, green, other).
+**Nominal** measures or variables categorize data into **mutually exclusive** categories. There is no logical order to the variable attributes even though we assign values to them. In other words, the variable values have no logical rank-order. Examples include political partisanship (Democrat, Republican, Independent, other, etc.) and eye color (e.g., blue, brown, green, other).
 
 <u>Example</u>: Political partisanship
 
