@@ -117,5 +117,5 @@ for(i in 1:10){
 .snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:  3s,1.5s;animation-delay:  3s,1.5s}
 </style>
 
-## <span style="color: green;">me</span><span style="color: red;">RR</span> <span style="color: green;">ch</span><span style="color: red;">R</span><span style="color: green;">istmas & happy holidays, comm 3710ers!!!</span>
+## <span style="color: green;">me</span><span style="color: red;">RR</span><span style="color: green;">y ch</span><span style="color: red;">R</span><span style="color: green;">istmas & happy holidays, comm 3710ers!!!</span>
 
