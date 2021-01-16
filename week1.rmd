@@ -17,7 +17,7 @@ urlcolor: blue
 
 
 # A Brief Introduction 
-Welcome to COMM 3710! Because of the coronavirus pandemic, COMM 3710 has moved online and will primarily be asynchronous. For more information on the course, please see the [course syllabus](https://utah.instructure.com/courses/649015/assignments/syllabus).
+Welcome to COMM 3710! Because of the coronavirus pandemic, COMM 3710 has moved online and will primarily be asynchronous. For more information on the course, please see the [course syllabus](https://rpubs.com/yesun/COMM3710_2020syllabus).
 
 I'm Prof. Sun and I'm an Associate Professor in the Department of Communication. I do empirical research in the areas of health communication, media effects, and meta-science. You can know more about my work [here](https://ye0sun.wixsite.com/academic) if you are interested.  
 
@@ -60,6 +60,7 @@ For help with UMail, uNID, VPN, Box, Office 365, and CIS log-in, contact the Cam
 Help is available Monday through Saturday. Please visit the [Campus Help Desk website](https://it.utah.edu/help/) for more information.
 
 <a href="#top">Back to top</a>
+
 
 
 # Note-taking for Success in College
@@ -277,3 +278,8 @@ Watch the video below defining "research."
 - Example: Predicting human communication behavior and attitudes.
 
 <a href="#top">Back to top</a>
+
+
+
+
+
