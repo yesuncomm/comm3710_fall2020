@@ -248,7 +248,7 @@ Next, let's practice identifying some inductive and deductive forms of reasoning
 Check your answers using the video below:
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/440080165" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/98u0cuQq4l4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 <a href="#top">Back to top</a>
