@@ -17,7 +17,7 @@ urlcolor: blue
 
 
 # A Brief Introduction 
-Welcome to COMM 3710! Because of the coronavirus pandemic, COMM 3710 has moved online and will primarily be asynchronous. For more information on the course, please see the [course syllabus](https://rpubs.com/yesun/COMM3710_2020syllabus).
+Welcome to COMM 3710! Because of the coronavirus pandemic, COMM 3710 has moved online and will primarily be asynchronous. For more information on the course, please see the [course syllabus](https://rpubs.com/yesun/710583).
 
 I'm Prof. Sun and I'm an Associate Professor in the Department of Communication. I do empirical research in the areas of health communication, media effects, and meta-science. You can know more about my work [here](https://ye0sun.wixsite.com/academic) if you are interested.  
 
