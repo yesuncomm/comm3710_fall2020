@@ -15,6 +15,13 @@ urlcolor: blue
      alt="It's in the syllabus"/>
 </center>
 
+<center>
+Welcome to a new semester and to COMM 3710!
+
+COMM 3710 is an asynchronous online course. For more information on the course, please see the [course syllabus](https://rpubs.com/yesun/COMM3710syllabus).
+</center>
+
+> It is your responsibility to read the syllabus in its entirety and adhere to the course policies and information documented therein. Please revisit the syllabus as many times as necessary during the semester.
 
 # A Brief Introduction 
 Welcome to COMM 3710! Because of the coronavirus pandemic, COMM 3710 has moved online and will primarily be asynchronous. For more information on the course, please see the [course syllabus](https://rpubs.com/yesun/COMM3710syllabus).
@@ -258,7 +265,7 @@ Check your answers using the video below:
 Watch the video below defining "research."
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/440081616" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jpw1lUASglQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 ## Probabilistic vs. Deterministic Predictions
