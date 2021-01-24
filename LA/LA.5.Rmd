@@ -1,0 +1,122 @@
+---
+title: "LA.5: Visualizing Data (10 points)"
+pagetitle: "COMM 3710: LA.5"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: united
+urlcolor: blue
+---
+
+# Resources
+Before beginning this assignment, watch this [video](https://youtu.be/mwLyXHfCPdE) about graphing one variable at a time in R.
+
+---
+
+# Data
+Use the [Utilities.csv](https://utah.instructure.com/files/108105204/download?download_frd=1) data set to complete this assignment. This data set contains a random sample of 117 utility bills for the following variables.
+
+* `month`: month (coded as a number)
+*	`day`: day of month on which bill was calculated
+*	`year`: year of bill
+*	`temp`: average temperature (F) for billing period
+*	`kwh`: electricity usage (kwh)
+*	`ccf`: gas usage (ccf)
+*	`thermsPerDay`: a numeric vector
+*	`billingDays`: number of billing days in billing period
+*	`totalbill`: total bill (in dollars)
+*	`gasbill`: average gas bill (in dollars)
+*	`elecbill`: average electric bill (in dollars)
+*	`notes`: notes about the billing period
+*	`donate`: (yes or no) did the person add money to their bill to be donated to Operation Fuel, a charity providing heat to families/small businesses in need
+
+---
+
+## Instructions
+1. Import the [Utilities.csv](https://utah.instructure.com/files/108105204/download?download_frd=1) data set. Use the codebook to familiarize yourself with the variables.
+<details>
+<summary>Hint</summary>
+
+   To read the data into a dataframe called `utilites` in R, use the command:
+   ```
+   utilities <- read.csv("Utilities.csv")
+   ```
+</details>
+<br>
+
+2. Make a graph to display the distribution of customers' total monthly bill (include the graph in your submission) and answer the following question.
+   a. Use the histogram you created--what best describes the distribution of customers' total monthly bill? <!--Slightly positively skewed, most total monthly bills are between $100 and $150-->
+   <details>
+   <summary>Hint</summary>
+
+      This question asks you to create a histogram. One way to do this is to use the command:
+      ```
+      hist(utilities$totalbill)
+      ```
+   </details>
+<br>
+
+3. Make a graph to display gas bill by month (include the graph in your submission).
+<details>
+<summary>Hint</summary>
+   
+   To make a plot, use the command:
+   ```
+   plot(utilities$month, utilities$gasbill)
+   ```
+</details>
+<br>
+
+4. Make a graph to display electric bill by month (include the graph in your submission). Answer the following questions.
+      a. What month has the highest average gas bill?
+      b. What month has the highest average electric bill?
+
+<br>
+
+5. Make a graph to display the relationship between gas usage and average gas bill (include the graph in your submission). 
+
+<br>
+
+6. Make a graph to display the relationship between electricity usage and average electric bill (include the graph in your submission). Answer the questions below.
+      a. Does there appear to be a relationship between gas usage and average gas bill? <!--Yes-->
+      b. Does there appear to be a relationship between electricity usage and average electric bill? <!--Yes-->
+
+<br>
+
+7. Make a graph to determine whether there is relationship between season and donation (include the graph in your submission). Start by making a new variable to categorize each bill into `season`. Have the variable equal winter if the bill was from December, January, or February. Have the variable equal spring if the bill was from March, April, or May. Have the variable equal summer if the bill was from June, July, or August. Have the variable equal fall if the bill was from September, October, or November.
+<details>
+<summary>Hint</summary>
+
+   Use the skills you learned in data management (e.g., subsetting) to create a new variable called `season` according to the instructions. Then, use the command `freq(utilities$season)` to create the graph.
+</details>
+<br>
+
+8. Make a new variable, `DonorStatus`. Set `DonorStatus` equal to 1 if the billee donated money to *Operation Fuel* and 0 otherwise. 
+<details>
+<summary>Hint</summary>
+
+   Try the command:
+   ```
+   utilities$DonorStatus <- ifelse(utilities$donate == "yes", 1, 0)
+   ```
+</details>
+<br>
+
+9. Make a bar chart to display the proportion of donors by season (include the graph in your submission). Order the seasons from lowest proportion of donors to highest proportion of donors; answer the question below.
+   a. Does there seem to be a relationship between season and donation?
+   <details>
+   <summary>Hint</summary>
+      
+      The following commands are one way to create a bar chart that is sorted:
+      ```
+      sorted <- reorder(utilities$season, utilities$DonorStatus)
+      counts <- table(utilities$DonorStatus, sorted)
+      barplot(counts)
+      ```
+</details>
+<br>
+
+10. Submit the following on Canvas:
+   a. A **.R file** containing the code used to complete this assignment. This document should include comments that explain your commands.
+   b. A **PDF file** containing the answers/figures/tables to each question--clearly label the answers with the question number.
