@@ -14,12 +14,12 @@ urlcolor: blue
 # What is Concept Explication? {.tabset .tabset-fade}
 > "A good part of the work called 'theorizing' is taken up with the clarification of concepts--and rightly so." -Robert Merton, *Social Theory and Social Structure* (1968, p. 168)
 
-**Additional reading**: [McLeod et al.](https://utah.instructure.com/courses/649015/files/104829823?module_item_id=12271964)
+**Additional reading**: [McLeod et al.](https://yesuncomm.github.io/comm3710/files/McLeod_et_al.pdf)
 
 When you type "define explicate" into a Google search, the result (combined with Merton's quote) gives us some idea about what **concept explication** means.
 
 <center>
-<img src="https://sarakyeo.github.io/images/explicate.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/explicate.png"/>
 </center>
 <br>
 
@@ -43,7 +43,7 @@ Concept explication involves two stages, which are explained in more detail in t
 Concept explication is a cyclical process. Through concept explication and iterations of meaning and empirical analysis, we can refine our definitions, which in turn inform the observations we make.
 
 <center>
-<img src="https://sarakyeo.github.io/images/concept-explication-cycle.gif"/>
+<img src="https://yesuncomm.github.io/comm3710/images/concept-explication-cycle.gif"/>
 </center>
 <br>
 
@@ -58,7 +58,7 @@ A **operational definition** is a definition that includes the procedures by whi
 
 The process of meaning analysis is illustrated below:
 <center>
-<img src="https://sarakyeo.github.io/images/meaning-analysis.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/meaning-analysis.png"/>
 </center>
 <br>
 
@@ -69,7 +69,7 @@ The process of meaning analysis is illustrated below:
 
 The process of empirical analysis is illustrated below (Note that you start from the bottom, i.e., from "data"):
 <center>
-<img src="https://sarakyeo.github.io/images/empirical-analysis.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/empirical-analysis.png"/>
 </center>
 <br>
 
@@ -120,7 +120,7 @@ All the work we have done to come up with conceptual and operational definitions
 
 
 # Concepts, Dimensions, and Indicators
-In [Steps in Meaning Analysis](https://yesuncomm.github.io/comm3710_fall2020/week3.html#Steps_in_Meaning_Analysis), we introduced two new terms, **dimensions** and **indicators**. For clarity, the three terms and their definitions are listed below. The image beneath that shows an example of each.
+In [Steps in Meaning Analysis](https://yesuncomm.github.io/comm3710/week3.html#Steps_in_Meaning_Analysis), we introduced two new terms, **dimensions** and **indicators**. For clarity, the three terms and their definitions are listed below. The image beneath that shows an example of each.
 
 **Concept**: A term or phrase used to identify an object or subject, or to represent a common characteristic of a class of objects or subjects. Concepts are the building blocks of thought and theory.
 
@@ -129,14 +129,14 @@ In [Steps in Meaning Analysis](https://yesuncomm.github.io/comm3710_fall2020/wee
 **Indicator**: Concrete observable behaviors, attitudes, perceptions, etc. indicating a concept or a dimension. It is concrete in that it can be directly or indirectly recorded or measured by some research technique.
 
 <center>
-<img src="https://sarakyeo.github.io/images/concepts-dimensions-indicators.gif"/>
+<img src="https://yesuncomm.github.io/comm3710/images/concepts-dimensions-indicators.gif"/>
 </center>
 <br>
 
 <a href="#top">Back to top</a>
 
 # Linking Concept Explication and Theory
-Before watching the video below, review pp. 4-7 of the [McLeod et al.](https://utah.instructure.com/courses/649015/files/104829823?module_item_id=12271964) reading.
+Before watching the video below, review pp. 4-7 of the [McLeod et al.](https://yesuncomm.github.io/comm3710/files/McLeod_et_al.pdf) reading.
 
 <center>
 <iframe width="560" height="315" src="https://player.vimeo.com/video/440151508" frameborder="0" allowfullscreen></iframe>
