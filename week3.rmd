@@ -11,6 +11,8 @@ output:
 urlcolor: blue
 ---
 
+ <base target="_top"/>
+ 
 # What is Concept Explication? {.tabset .tabset-fade}
 > "A good part of the work called 'theorizing' is taken up with the clarification of concepts--and rightly so." -Robert Merton, *Social Theory and Social Structure* (1968, p. 168)
 
