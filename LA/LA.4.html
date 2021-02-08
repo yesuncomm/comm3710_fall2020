@@ -308,11 +308,11 @@ div.tocify {
 </summary>
 <p>An important part of data management processes (covered in the linked video) is to create new variables based on existing ones. In this question, we can get at the new variable <code>ExtremeMCS</code> through the following process:</p>
 <ol style="list-style-type: decimal">
-<li><p>The goal is to create a variable and add it to the data set, in other words, an object in R with the generic form <code>DataFrame$NewVariable</code> (i.e., a new variable attached to the existing data set). In the example of this question, we will create this object <code>helpdata$ExtremeMCS &lt;-</code></p></li>
+<li><p>The goal is to create a variable and add it to the data set, in other words, to create an object in R with the generic form <code>DataFrame$NewVariable</code> (i.e., a new variable attached to the existing data set). In the example of this question, we will create this object as <code>helpdata$ExtremeMCS &lt;-</code></p></li>
 <li><p>This new variable <code>ExtremeMCS</code> takes on the value of either <code>1</code> or <code>0</code>. We already know that to assign a value to an object, it generally looks like (depicting the thought process, not the complete code):</p>
 <pre><code>   helpdata$ExtremeMCS             &lt;- 1
    helpdata$ExtremeMCS             &lt;- 0</code></pre></li>
-<li><p>Next, we need to specify the condition under which <code>1</code> or <code>0</code> is assigned to the new variable. According to the instruction, <code>1</code> is for the “at extreme risk” category (i.e., <code>mcs</code> &lt; 20). As you have seen in the examples in the video, such conditions can be specified by using <code>[ ]</code>. Below is the code for one category of <code>ExtremeMCS</code>. You can complete the code for the other category on your own. After you are done, you can check whether you’ve created the variable correctly by running the frequency on the new variable.</p>
+<li><p>Next, we need to specify the condition under which <code>1</code> or <code>0</code> is assigned to the new variable. According to the instruction, <code>1</code> is for the “at extreme risk” category (i.e., <code>mcs</code> &lt; 20). As you have seen in the examples in the video, such conditions can be specified by using <code>[ ]</code>. Below is the code for one category of <code>ExtremeMCS</code>. You can complete the code for the other category on your own.</p>
 <pre><code>  helpdata$ExtremeMCS[helpdata$mcs &lt; 20] &lt;- 1   
   helpdata$ExtremeMCS[                 ] &lt;- 0  
   ## Created variable ExtremeMCS: 1 = &quot;at extreme risk (mcs &lt; 20)&quot;; 
@@ -322,7 +322,7 @@ div.tocify {
 <summary>
 <p>Alternative (if you are interested)</p>
 </summary>
-<p>This is not covered in the video. It is an easier alternative with the <code>ifelse</code> command for those who are interested.</p>
+<p>This is not covered in the video. It is an easier alternative with the <code>ifelse</code> command.</p>
 <pre><code>helpdata$ExtremeMCS &lt;- ifelse(helpdata$mcs &lt; 20, 1, 0)
 </code></pre>
 <p>Figure out what the arguments (the text and numbers within the parentheses) in the <code>ifelse</code> function mean by running the command line <code>?ifelse</code> and reading the documentation.</p></li>

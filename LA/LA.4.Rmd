@@ -48,7 +48,7 @@ For this assignment, we'll be working with these variables specifically:
    <summary>Hint</summary>
    An important part of data management processes (covered in the linked video) is to create new variables based on existing ones. In this question, we can get at the new variable `ExtremeMCS` through the following process:  
    
-   1) The goal is to create a variable and add it to the data set, in other words, an object in R with the generic form `DataFrame$NewVariable` (i.e., a new variable attached to the existing data set). In the example of this question, we will create this object `helpdata$ExtremeMCS <-    `  
+   1) The goal is to create a variable and add it to the data set, in other words, to create an object in R with the generic form `DataFrame$NewVariable` (i.e., a new variable attached to the existing data set). In the example of this question, we will create this object as `helpdata$ExtremeMCS <-    `  
    
    2) This new variable `ExtremeMCS` takes on the value of either `1` or `0`. We already know that to assign a value to an object, it generally looks like (depicting the thought process, not the complete code): 
    
@@ -57,7 +57,7 @@ For this assignment, we'll be working with these variables specifically:
          helpdata$ExtremeMCS             <- 0
       ```
 
-   3) Next, we need to specify the condition under which `1` or `0` is assigned to the new variable. According to the instruction, `1` is for the "at extreme risk" category (i.e., `mcs` < 20). As you have seen in the examples in the video, such conditions can be specified by using `[ ]`. Below is the code for one category of `ExtremeMCS`. You can complete the code for the other category on your own. After you are done, you can check whether you've created the variable correctly by running the frequency on the new variable.   
+   3) Next, we need to specify the condition under which `1` or `0` is assigned to the new variable. According to the instruction, `1` is for the "at extreme risk" category (i.e., `mcs` < 20). As you have seen in the examples in the video, such conditions can be specified by using `[ ]`. Below is the code for one category of `ExtremeMCS`. You can complete the code for the other category on your own.    
    
        ```
          helpdata$ExtremeMCS[helpdata$mcs < 20] <- 1   
@@ -68,7 +68,7 @@ For this assignment, we'll be working with these variables specifically:
       ``` 
    <details>
    <summary>Alternative (if you are interested)</summary>  
-   This is not covered in the video. It is an easier alternative with the `ifelse` command for those who are interested. 
+   This is not covered in the video. It is an easier alternative with the `ifelse` command. 
    
          ```
          helpdata$ExtremeMCS <- ifelse(helpdata$mcs < 20, 1, 0)
