@@ -38,7 +38,7 @@ For this assignment, we'll be working with these variables specifically:
 
 2. Focuses on the variable `mcs` --  the "mental component score" of a patient. Patients with a mental component score (`mcs`) less than 20 are thought to be at extreme risk of returning to the detoxification unit within the next 12 months.   
 
-   2a. First, check the frequency of `mcs` (review how you ran frequency in LA.3) and report its range (i.e, the smallest and largest values of `mcs`).     
+   2a. First, check the frequency of `mcs` (review how you ran frequency in LA.3) and report its range (i.e, the smallest and largest values of `mcs`). (Plesae note: you do not need to turn in the frequency table for `mcs`, which is too large to be included in the PDF document.)    
         
    2b. Suppose we are only interested in whether patients are at extreme risk (i.e., with `mcs` < 20) or not (i.e., with `mcs` >= 20), instead of their specific `mcs` scores. 
    
