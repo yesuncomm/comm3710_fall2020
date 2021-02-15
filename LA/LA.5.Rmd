@@ -9,114 +9,141 @@ output:
 urlcolor: blue
 ---
 
-# Resources
-Before beginning this assignment, watch this [video](https://youtu.be/mwLyXHfCPdE) about graphing one variable at a time in R.
+# Resources{#resources}
+In this assignment, we will learn how to use the R package, `ggplot2`, to create graphs. Before you begin the assignment, watch and familiarize yourself with the following videos. Remember to drop in to virtual office hours if you need help.
+
+- Watch [Video 06](https://youtu.be/mwLyXHfCPdE) about graphing one variable at a time in R. 
+- Watch [Video 07](https://youtu.be/IZoCbCQRmUE) about graphing relationships between variables in R.
+
+As always, keep the videos handy for reference as you work through this assignment.
 
 ---
 
 # Data
-Use the [Utilities.csv](https://utah.instructure.com/files/108105204/download?download_frd=1) data set to complete this assignment. This data set contains a random sample of 117 utility bills for the following variables.
+Use the [Utilities.csv](http://yesuncomm.github.io/comm3710/files/Utilities.csv) data set to complete this assignment. This data set contains **a random sample of 117 utility bills** for the following variables. 
 
-* `month`: month (coded as a number)
+*  `month`: month of bill (coded as a number: 1 - 12)
 *	`day`: day of month on which bill was calculated
 *	`year`: year of bill
-*	`temp`: average temperature (F) for billing period
+*	`temp`: average temperature ($^{\circ}$F) for billing period
 *	`kwh`: electricity usage (kwh)
 *	`ccf`: gas usage (ccf)
 *	`thermsPerDay`: a numeric vector
 *	`billingDays`: number of billing days in billing period
-*	`totalbill`: total bill (in dollars)
-*	`gasbill`: average gas bill (in dollars)
-*	`elecbill`: average electric bill (in dollars)
+*	`totalbill`: total monthly bill (in dollars)
+*	`gasbill`: gas bill (in dollars)
+*	`elecbill`: electric bill (in dollars)
 *	`notes`: notes about the billing period
 *	`donate`: (yes or no) did the person add money to their bill to be donated to Operation Fuel, a charity providing heat to families/small businesses in need
 
 ---
 
-## Instructions
-1. Import the [Utilities.csv](https://utah.instructure.com/files/108105204/download?download_frd=1) data set. Use the codebook to familiarize yourself with the variables.
-<details>
-<summary>Hint</summary>
+# Instructions
+1. Import the [Utilities.csv](http://yesuncomm.github.io/comm3710/files/Utilities.csv) data set into R. Use the codebook above to familiarize yourself with the variables. In this assignment, we will not directly tell you the names of the variables involved in each question. You will have to read each question carefully and decide which variable(s) from the data set to use. 
 
-   To read the data into a dataframe called `utilites` in R, use the command:
-   ```
-   utilities <- read.csv("Utilities.csv")
-   ```
-</details>
-<br>
-
-2. Make a graph to display the distribution of customers' total monthly bill (include the graph in your submission) and answer the following question.
-   a. Use the histogram you created--what best describes the distribution of customers' total monthly bill? <!--Slightly positively skewed, most total monthly bills are between $100 and $150-->
    <details>
    <summary>Hint</summary>
 
-      This question asks you to create a histogram. One way to do this is to use the command:
-      ```
-      hist(utilities$totalbill)
-      ```
+   Review LA.3 or LA.4 for the command to read the .csv data into R as a data frame.
    </details>
 <br>
 
-3. Make a graph to display gas bill by month (include the graph in your submission).
+2. Make a **histogram** to display the distribution of customers' *total monthly bill* (include the graph in your PDF submission) and answer the following question.
+   <details>
+   <summary>Hint</summary>
+   
+      To create a histogram, which visualizes the frequency distribution of one variable, watch Video 06. Make sure you install and load the package `ggplot2`. The commands you will use involve `ggplot()` and `geom_histogram()` (esp pay attention starting from 10:27). Remember that you can also read the documentation for these commands by typing `?ggplot` and `?geom_histogram` in the Console.
+      
+      In the bottom right **Plot** screen in RStudio, you can **Export** the graph as an image or **Copy** and paste it in the Word document you are working on (and later you can save the finished document as a PDF).
+   </details>
+
+   a. Look at the histogram you just created and describe the distribution. Is the distribution skewed or symmetric (fo an explanation of skewness, watch Video 06 starting at 13:56; or you can see Wrench et al. Ch. 14: Skewness and Kurtosis)? If skewed, is the distribution skewed to the right or the left? From eyeballing, What is the range where the values of the total monthly bills seem to be concentrated?
+   <!--Slightly positively (right) skewed, most total monthly bills are between $100 and $150-->
+
+<br>
+
+3. Make a **scatter plot** to display *gas bill* by *month* (include the graph in your PDF submission).
 <details>
 <summary>Hint</summary>
    
-   To make a plot, use the command:
-   ```
-   plot(utilities$month, utilities$gasbill)
-   ```
+   Watch Video 07 to learn how to make a scatter plot depicting the relationship between two variables. The command you will use involve `ggplot()` and `geom_point()`.
 </details>
-<br>
-
-4. Make a graph to display electric bill by month (include the graph in your submission). Answer the following questions.
-      a. What month has the highest average gas bill?
-      b. What month has the highest average electric bill?
-
-<br>
-
-5. Make a graph to display the relationship between gas usage and average gas bill (include the graph in your submission). 
-
-<br>
-
-6. Make a graph to display the relationship between electricity usage and average electric bill (include the graph in your submission). Answer the questions below.
-      a. Does there appear to be a relationship between gas usage and average gas bill? <!--Yes-->
-      b. Does there appear to be a relationship between electricity usage and average electric bill? <!--Yes-->
-
-<br>
-
-7. Make a graph to determine whether there is relationship between season and donation (include the graph in your submission). Start by making a new variable to categorize each bill into `season`. Have the variable equal winter if the bill was from December, January, or February. Have the variable equal spring if the bill was from March, April, or May. Have the variable equal summer if the bill was from June, July, or August. Have the variable equal fall if the bill was from September, October, or November.
-<details>
+      a. Based on your graph, which month seems to have the highest gas bill **overall**?
+      b. Now, calculate the **average** gas bill for the month of January and that of December, so that we can have a more precise comparison. Compute and report the mean of gas bill for each of these two month-- Which is higher?
+      <details>
 <summary>Hint</summary>
+      <br>
+       Step 1. To calculate the average gas bill for January, first subset the data to contain only observations from January (i.e., `month == 1`). Review LA.3, Q2c, for the `subset` command. For example, to create a subset for the data that contain only information from January:`jan <- subset(utilities, month == 1)`. You can then do the same for December.  
+       <br>
+       Another equivalent way of creating the subset is to use the `filter` command-- that is, to create an object that filters the `utilities` data frame by month. You could, for example, use the code:`jan <- filter(utilities, month == 1)`. For help with the `filter` function, type and run `?filter`. To use the `filter` function, you need to install and load the package `dplyr`.    
+      <br>
+       Step 2. Then, you can use the `mean()` function to calculate the average gas bill using the subset data for each month. You can Type `?mean` into the Console and read the documentation for this function. You can also use `summary()` to obtain a set of descriptive statistics including the mean (see the last part of Video 6).   
+       (Note: This doesn't apply to this data-- but many data sets, including those you'll work on for your group project, contain missing values `NA` in certain variables, which need to be removed from your mean computation by using the argument in the ()-- `, na.rm = TRUE`. Otherwise commands like `mean()` will not run. You may have noticed this argument in the videos and should keep it in mind for future assignments.)  
+       <br>
+          <details>
+         <summary>Alternative</summary>  
+      <br>
+      Or, you can use the `[ ]` to directly create a subset as part of the argument in `mean()`. Look at the example in our [R Help Guide](https://rpubs.com/yesun/Comm3710_helpwithR), under Section 2.5, where we compute the mean of *ice cream consumption* for only *females* as `mean(mydata$icecream[mydata$gender == "female"])`. See whether you can draw parallels for this question. Such brackets are used in the videos a lot; they can get quite long pretty fast, though, so watch out for errors if you use this approach.   
 
-   Use the skills you learned in data management (e.g., subsetting) to create a new variable called `season` according to the instructions. Then, use the command `freq(utilities$season)` to create the graph.
 </details>
 <br>
 
-8. Make a new variable, `DonorStatus`. Set `DonorStatus` equal to 1 if the billee donated money to *Operation Fuel* and 0 otherwise. 
-<details>
-<summary>Hint</summary>
+4. Make a **scatter plot** to display *electric bill* by *month* (include the graph in your PDF submission).
+      a. Based on your graph, which month do you think has the highest electric bill **overall**?
+      b. Now, calculate the average electric bill for the months of September and December. Which is higher?
 
-   Try the command:
-   ```
-   utilities$DonorStatus <- ifelse(utilities$donate == "yes", 1, 0)
-   ```
-</details>
 <br>
 
-9. Make a bar chart to display the proportion of donors by season (include the graph in your submission). Order the seasons from lowest proportion of donors to highest proportion of donors; answer the question below.
-   a. Does there seem to be a relationship between season and donation?
+5. Make a **scatter plot** to display the relationship between *gas usage* and *gas bill* (include the graph in your PDF submission). 
+      a. Does there appear to be a relationship between gas usage and gas bill? <!--Yes-->
+
+<br>
+
+6. Make a **scatter plot** to display the relationship between *electricity usage* and *electric bill* (include the graph in your PDF submission).
+      a. Does there appear to be a relationship between electricity usage and electric bill? <!--Yes-->
+
+<br>
+
+7. **Bonus question!! (2 extra points)** 
+
+   Make a **bar chart** to depict the relationship between *season of the year* and *whether the billee donated money to Operational Fuel*. Include the graph in your PDF submission. Based on the graph you've created, does there seem to be a relationship between season and donation (in other words, does donation vary with season)?  
+
+   Give it a try, and do as much as you can. You'll get partial points if you get certain parts right!
+
    <details>
    <summary>Hint</summary>
-      
-      The following commands are one way to create a bar chart that is sorted:
+
+   Step 1. Look at the codebook and decide what variables from the data set will be used in answering this question. 
+   
+   Step 2. Create a new categorical variable called `season` based on `month`. Have the variable equal "winter" if the bill was from December, January, or February. Have the variable equal "spring" if the bill was from March, April, or May. Have the variable equal "summer" if the bill was from June, July, or August. Have the variable equal "fall" if the bill was from September, October, or November.
+
+   Use the skills you learned in data management (e.g., subsetting in Q2b, LA.4) to create a new variable called `season` according to the instructions. Note that `season` is a categorical, character variable here. Also pay attention to the condition argument: for each season, the three months are combined by the logical operator "or", which translates to `|` in R (See our [Help Guide](https://rpubs.com/yesun/716728), Section 2.5). 
+   
+   Then, use the command `freq(utilities$season)` from the `descr` package to check that you have created the `season` variable correctly. Include the frequency table of `season` in the PDF document. 
+
+   Step 3. Check the frequency of the variable you have chosen from the data set that represents the donation status. Include the frequency table in the PDF document.
+
+   As you may have noticed, this variable from the data set is a character variable with categories "yes" and "no". I suggest that you create a new variable based on this one that turns "yes"/"no" into 1/0 (Review LA.4 for how to do it). You can then use this new variable (with `1` and `0`) directly in the graphing command (see below), giving you the proportion of donors for each season.   
+   
+   Step 4. To create the bar chart, Watch Video 07, which covers creating bar charts with the `ggplot2` package that graph the relationship between two categorical variables (see 10: 25 of the video). Note that the `ggplot2` command shown at 12:45 may be giving you an error (i.e., "fun.y is deprecated"). Try the code below (not complete, just the barebones structure):
+         
       ```
-      sorted <- reorder(utilities$season, utilities$DonorStatus)
-      counts <- table(utilities$DonorStatus, sorted)
-      barplot(counts)
+         ggplot(data =  ) + 
+            stat_summary(aes(x = , y = ), fun=mean, geom = ) +
+            labs(x = "  ",
+                 y = "proportion of donors") 
       ```
-</details>
+   Notes: 
+   1. If you have followed my suggestion in Step 3, then you do not need to follow the step in the video using (as.numeric(as.character...)), since you can directly use the numeric variable you've created (i.e., the one with 1 vs. 0). 
+   2. You don't need to (although you can) create a new data frame to contain only a few selected variables as was done in the video for these graphs. You can use the full data set and just make sure you specify the x & y variables correctly.  
+   3. There are other ways of making this bar graph. This Hint is more specifically aligned with Video 7. If you have other ways of making the graph, feel free to do so. You'll get the points as long as you do it correctly :). 
+   
+   </details>
 <br>
 
-10. Submit the following on Canvas:
-   a. A **.R file** containing the code used to complete this assignment. This document should include comments that explain your commands.
-   b. A **PDF file** containing the answers/figures/tables to each question--clearly label the answers with the question number.
+   **Note**: Since Q7 is a bonus question, if you have any questions about this question, please directly email Prof Sun (ye.sun@utah.edu). The TAs will concentrate on answering other questions from the students. 
+
+Submit the following on Canvas:
+
+a. A **.R file** containing the code used to complete this assignment. This document should include comments that explain your commands.
+b. A **PDF file** containing the answers/figures/tables to each question--clearly label the answers with the question number.
