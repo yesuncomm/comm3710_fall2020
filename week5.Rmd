@@ -56,7 +56,7 @@ If YES, how much attention did you pay to them?
 
 ---
 
-Check your answers [here](https://yesuncomm.github.io/comm3710_fall2020/files/examples-survey-questions.pdf).
+Check your answers [here](https://yesuncomm.github.io/comm3710/files/examples-survey-questions.pdf).
 
 <a href="#top">Back to top</a>
 
@@ -76,9 +76,9 @@ Polling is survey research that we often hear about in media, especially as it r
 
 That said, people had some questions about the accuracy of polling following the 2016 election. Read the three articles below. Each highlights some of the contemporary challenges faced by polling.
 
-- [Bialik and Enten (2016)](https://yesuncomm.github.io/comm3710_fall2020/files/Bialik_Enten_2016.pdf)
-- [Zukin (2015)](https://yesuncomm.github.io/comm3710_fall2020/files/Zukin.pdf)
-- [Silver (2014)](https://yesuncomm.github.io/comm3710_fall2020/files/Silver.pdf)
+- [Bialik and Enten (2016)](https://yesuncomm.github.io/comm3710/files/Bialik_Enten_2016.pdf)
+- [Zukin (2015)](https://yesuncomm.github.io/comm3710/files/Zukin.pdf)
+- [Silver (2014)](https://yesuncomm.github.io/comm3710/files/Silver.pdf)
 
 <a href="#top">Back to top</a>
 
@@ -105,7 +105,7 @@ Buckingham, A., & Saunders, P. (2004). *The Survey Methods Workbook: From Design
 ## Questionnaire Construction
 We use a questionnaire because it is a **standardized measurement instrument** that allows us to collect **valid** and **reliable** data.
 
-Although we call it a questionnaire, not all of the "questions" contained within it are true questions. Many questions are in the form of statements that require participants to indicate the degree to which they agree or disagree with the statements. The agree-disagree scales that many of us are familiar with are known as Likert scales (see example in [Week 1](https://yesuncomm.github.io/comm3710_fall2020/week1.html)) and they are interval level measures (if this term is unfamiliar, review levels of measurement in [Week 4](https://yesuncomm.github.io/comm3710_fall2020/week4.html#Measurement)).
+Although we call it a questionnaire, not all of the "questions" contained within it are true questions. Many questions are in the form of statements that require participants to indicate the degree to which they agree or disagree with the statements. The agree-disagree scales that many of us are familiar with are known as Likert scales (see example in [Week 1](https://yesuncomm.github.io/comm3710/week1.html)) and they are interval level measures (if this term is unfamiliar, review levels of measurement in [Week 4](https://yesuncomm.github.io/comm3710/week4.html#Measurement)).
 
 Two important aspects of questionnaire construction that researchers must pay attention to when creating a survey are:
 
@@ -160,7 +160,7 @@ This is known as **secondary analysis** and the data used for such analyses are 
 
 
 ## Common Sources of Secondary Data
-The data sets listed in the [Modules](https://utah.instructure.com/courses/649015/modules) page are some examples of sources of secondary data. Spend some time on each of the websites listed and explore the data that can be downloaded. Many research questions have been answered using these secondary data.
+The data sets listed in the Canvas Modules page ("Group Project Data Sets") are some examples of sources of secondary data. Spend some time on each of the websites listed and explore the data that can be downloaded. Many research questions have been answered using these secondary data.
 
 ### Examples of Published Research Using Secondary Data
 Webster, S. W., & Abramowitz, A. I. (2017). The ideological foundations of affective polarization in the U.S. electorate. *American Politics Research*, 45(4), 621–647. https://doi.org/10.1177/1532673X17703132
@@ -217,7 +217,7 @@ The bottom line: **The main disadvantage of experiments is the artificiality of 
 The most basic experimental design is a **pretest-posttest-control group design with random assignment of participants to each group**. Note that random assignment and random selection are not the same! Random selection refers to selecting subjects at random to a sample. Random assignment refers to assigned subjects in a sample to random groups in an experiment.
 
 <center>
-<img src="https://sarakyeo.github.io/images/basic-experimental-design.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/basic-experimental-design.png"/>
 </center>
 <br>
 
@@ -230,7 +230,7 @@ Then, the experimental group is exposed to the stimulus ($X$), which is the mani
 Following the manipulation, the dependent variable is again measured at $t_2$ (`obs 3` and `obs 4`).
 
 <center>
-<img src="https://sarakyeo.github.io/images/basic-experimental-design_Babbie.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/basic-experimental-design_Babbie.png"/>
 </center>
 <br>
 
@@ -243,7 +243,7 @@ There are also variations on the basic experimental design. Here are four differ
 In this design, there is only one group--the experimental group. The outcome variable is compared with some external standard or criteria. At time 1, there is no measurement. Then, at time 2, the stimulus (in this example, the stimulus is exercise) is applied. Lastly, at time 3, researchers measure the outcome variable (e.g., fitness).
 
 <center>
-<img src="https://sarakyeo.github.io/images/oneshot-case-study.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/oneshot-case-study.png"/>
 </center>
 <br>
 
@@ -253,7 +253,7 @@ In this design, there is only one group--the experimental group. The outcome var
 Similar to the one-shot case study, this design has only one group, the experimental group. In this design, the outcome variable (e.g., fitness) is measured prior to application of the experimental manipulation/stimulus, at time 1 (e.g., exercise). The stimulus is applied at time 2, then the outcome variable is again measured at time 3.
 
 <center>
-<img src="https://sarakyeo.github.io/images/onegroup-preposttest-design.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/onegroup-preposttest-design.png"/>
 </center>
 <br>
 
@@ -263,7 +263,7 @@ Similar to the one-shot case study, this design has only one group, the experime
 In this design, there are two groups--a control and an experimental group. In neither group are pretest measurements of the outcome variable taken at time 1. However, in the experimental group, subjects are exposed to the experimental stimulus (exercise) at time 2. In the control group, however, subjects are not exposed to the experimental manipulation. Then, at time 3, the outcome variable is measured among subjects in both experimental and control groups.
 
 <center>
-<img src="https://sarakyeo.github.io/images/static-group.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/static-group.png"/>
 </center>
 <br>
 
@@ -273,7 +273,7 @@ In this design, there are two groups--a control and an experimental group. In ne
 When we design experiments, we must guard against threats to **internal and external validity**. The figure below shows the types of threats to internal and external validity that we will discuss.
 
 <center>
-<img src="https://sarakyeo.github.io/images/threats-int-ext-validity.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/threats-int-ext-validity.png"/>
 </center>
 <br>
 
@@ -364,7 +364,7 @@ We have already discussed that experiments impose relatively artificial environm
 The **Solomon four-group design** expands on the basic experimental design to account for threats to internal validity. To review, the basic experimental design includes a pretest-posttest control group design:
 
 <center>
-<img src="https://sarakyeo.github.io/images/basic-experimental-design.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/basic-experimental-design.png"/>
 </center>
 <br>
 
@@ -378,7 +378,7 @@ Let's assume that we want to examine how a film about positive contributions of 
 In our experiment, the pre- and posttest measures are identical and designed to assess people's levels of prejudice against Muslims. Assuming that the film decreases people's prejudice against Muslims, we would expect the results shown in the figure below:
 
 <center>
-<img src="https://sarakyeo.github.io/images/solomon-four-group-design.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/solomon-four-group-design.png"/>
 </center>
 <br>
 
