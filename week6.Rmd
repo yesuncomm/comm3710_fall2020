@@ -16,7 +16,7 @@ urlcolor: blue
 
 **Reliability**
 
-- Reliability is a quality of measurement that refers to consistency. When we assess reliability of a measure, we are asking whether the measure is a consistent indicator of a concept
+- Reliability is a quality of measurement that refers to consistency. When we assess reliability of a measure, we are asking whether the measure is a consistent indicator of a concept.
 
 **Validity**
 
@@ -28,11 +28,10 @@ urlcolor: blue
 Reliability and validity are precision and accuracy, respectively. Using these four terms, describe the dart-thrower in scenarios A, B, and C below. Answers can be found in the video below.
 
 <center>
-<img src="https://sarakyeo.github.io/images/rel-val-01.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/rel-val-01.png"/>
 <br>
 
-<iframe width="560" height="315" src="https://player.vimeo.com/video/451652472" frameborder="0" allowfullscreen></iframe>
-</center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RgDfNMND0GA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 <br>
 
 <a href="#top">Back to top</a>
@@ -52,7 +51,7 @@ Click on the tabs below to learn more about each type of reliability.
 Refers to consistency in measures across time. We can evaluate stability using a test-retest method. By measuring a concept at time 1 ($t_1$) and time 2 ($t_2$), we can compare them to see if they are stable across time.
 
 <center>
-<img src="https://sarakyeo.github.io/images/stability.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/stability.png"/>
 </center>
 <br>
 
@@ -62,7 +61,7 @@ Refers to consistency in measures across time. We can evaluate stability using a
 Refers to consistency between observers. By comparing the results of two different observers who are measuring the same phenomenon using the same measuring device, we can determine whether we have reliability between observers. This reliability between observers is known as **inter-coder reliability**.
 
 <center>
-<img src="https://sarakyeo.github.io/images/reproducibility.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/reproducibility.png"/>
 </center>
 <br>
 
@@ -85,21 +84,21 @@ Inter-item reliability refers to the correlation of each item/indicator with eve
 A **statistical correlation** is a measure of the strength and direction of the relationship between two variables. The three figures below show three different types of relationships (negative, neutral, or positive). See if you can identify the type of relationship in the figure.
 
 <center>
-<img src="https://sarakyeo.github.io/images/r-neu.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/r-neu.png"/>
 </center>
 <br>
 
 <center>
-<img src="https://sarakyeo.github.io/images/r-pos.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/r-pos.png"/>
 </center>
 <br>
 
 <center>
-<img src="https://sarakyeo.github.io/images/r-neg.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/r-neg.png"/>
 </center>
 <br>
 
-Check your answers with the [Week 4 lecture on relationships](https://yesuncomm.github.io/comm3710_fall2020/week4.html#Relationships).
+Check your answers with the [Week 4 lecture on relationships](https://yesuncomm.github.io/comm3710/week4.html#Relationships).
 
 <hr>
 
@@ -110,7 +109,7 @@ To assess inter-item reliability, we use one of three ways. The video below expl
 3. Cronbach's alpha ($\alpha$)
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/451655609" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1HObEfdRT3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 </center>
 <br>
 
@@ -118,7 +117,7 @@ To assess inter-item reliability, we use one of three ways. The video below expl
 
 
 # Approaches to Validity
-There are three primary approaches to validity: One can be assessed before data collection, while the remaining two are assessed after data collection.
+There are three primary approaches or types of validity that we will cover in this course. One can be assessed before data collection, while the remaining two are assessed after data collection.
 
 Before data collection, we can assess:
 
@@ -138,7 +137,7 @@ Read Chapter 8 of your textbook and make note of the definitions of these terms.
 Here's a graphical summary of what we have covered on reliability and validity of measures. Remember to post any questions about this week's content in the Discussion.
 
 <center>
-<img src="https://sarakyeo.github.io/images/rel-val-summary.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/rel-val-summary.png"/>
 </center>
 <br>
 
