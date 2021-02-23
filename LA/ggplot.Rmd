@@ -5,6 +5,9 @@ date: "2/21/2021"
 output: html_document
 ---
 
+**A more refined version of this tutorial has now been included in our [COMM3710 R Book](https://sarakyeo.github.io/COMM-3710-bookdown/docs/ggplot2.html). You can also view this tutorial there.** 
+
+
 We start by loading the required packages.
 
 ```{r eval = FALSE}
@@ -38,7 +41,7 @@ ggplot(data = name_of_your_dataframe)
 ggplot(data = name_of_your_data, aes(x = variable_name_x, y = variable_name_y))
 ```
 
-  Make sure you close off all the parentheses correctly -- it's a common error in R. 
+  Make sure you close all the parentheses correctly -- it's a common error in R. 
   
   If you are only working with only one variable (e.g., getting the histogram of one variable), you will only need to specify the `x = ` argument.  
 
