@@ -11,7 +11,11 @@ urlcolor: blue
 
 <br>
 
-**Before you start** this assignment, watch [this video](https://youtu.be/08uylSp-CuI) to understand the logic of hypothesis testing. We use different statistical tests depending on the nature of the independent (or predictor, explanatory) variable and the dependent (or outcome, response) variable. It is important to correctly identify the type of variables involved in a hypothesis (or research question).  
+# Overview 
+
+**Before you start** this assignment, watch [this video](https://youtu.be/08uylSp-CuI) to understand the logic of hypothesis testing. In LA.5, we visualize the relationship between two variables. Whereas graphs can be informative, we do not know for sure whether a relationship is real or not. In hypothesis testing, we use statistical tests to help us conclude whether there is a "meaningful" relationship between two variables. By "meaningful," we mean "statistically significant," a term you'll hear a lot.   
+
+We use different statistical tests depending on the nature of the independent (or predictor, explanatory) variable and the dependent (or outcome, response) variable. These tests include correlation, t-tests, ANOVA, and Chi-square tests. It is important to correctly identify the type of variables involved in a hypothesis (or research question) so that you can choose the right test. Each produces a **test statistic** and an associated probability value (**p-value**), which helps us determine whether the result is **statistically significant**. The video provides the basic background knowledge, and the "Hints" for Question 2 is also very useful for you to complete this assignment.
 
 ---
 
