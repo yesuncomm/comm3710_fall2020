@@ -37,7 +37,7 @@ Often, a moderate sample size is statistically sufficient. In general, sample si
 
 > A **margin of error** is a summary of sampling error that **quantifies uncertainty about survey results**. Remember that in survey research we are making probabilistic, not deterministic, predictions from a sample to a population. In other words, there is some chance of error.
 
-Be sure to read the following for this week: **[ASA (pp. 63-68)](https://utah.instructure.com/courses/649015/files/107366152?module_item_id=12943527)**
+Be sure to read the following for this week: **ASA (pp. 63-68)**
 
 Typically, margins of error are reported with confidence levels or confidence intervals.
 
@@ -46,13 +46,11 @@ Typically, margins of error are reported with confidence levels or confidence in
 **Confidence interval** = the range of values within which a population parameter is estimated (using a sample) to lie.
 
 ### An Example
-```
-Survey data show that 60% of Americans prefer ice cream over cake for dessert. This question has a margin of error of ±3% and a 95% confidence interval.
-
-Confidence level: We are 95% confident that 57% to 63% of Americans prefer ice cream over cake for dessert.
-
-Confidence interval: The confidence interval is calculated using the margin of error (±3%) and is 57% to 63%.
-```
+> Survey data show that 60% of Americans prefer ice cream over cake for dessert. This question has a margin of error of ±3% and a 95% confidence interval.
+> 
+> **Confidence level**: We are 95% confident that 57% to 63% of Americans prefer ice cream over cake for dessert.
+> 
+> **Confidence interval**: The confidence interval is calculated using the margin of error (±3%) and is 57% to 63%.
 
 The above logic can also be used to determine your sample size. Once you know how much error you can tolerate, you can calculate the number of cases required in a sample.
 
@@ -79,7 +77,7 @@ Sample size adheres to the **law of diminishing returns**. This means that once 
 The video below explains why sampling matters, but it is not only about sampling. As we have learned, other factors, such as question wording and order are also important to the generalizations, inferences, or predictions that can be made using survey data.
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/451666765" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HZzPmzEejWs" frameborder="0" data-external="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 </center>
 <br>
 
@@ -152,7 +150,7 @@ Probability theory is the basis for estimating parameters in a population from a
 ## Weighting
 In a sample in which all elements have the same chance of selection, each case is given the same weight. However, it is sometimes appropriate to weight some cases more than others. This process is known as **weighting**. You may have heard this term used in the 2016 Presidential election (see, for example, [this article in The New York Times](https://nyti.ms/2dXBlva)).
 
-Read this [report](https://yesuncomm.github.io/comm3710_fall2020/files/AAPOR%20(2007).pdf) by the American Association for Public Opinion Research (AAPOR) about weighting.
+Read this [report](https://yesuncomm.github.io/comm3710/files/AAPOR%20(2007).pdf) by the American Association for Public Opinion Research (AAPOR) about weighting.
 
 Post any questions about this week's content in the Discussion.
 
