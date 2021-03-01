@@ -9,42 +9,121 @@ output:
 urlcolor: blue
 ---
 
-# Resources
-- Before starting this assignment, watch this [video](https://youtu.be/IZoCbCQRmUE).
-- You may also find this [video](https://youtu.be/2uQCUBtqCfM) helpful for this assignment.
-- You can also refer to this site of [R resources and tutorials](https://rpubs.com/yesun/652965).
+<br>
+
+**Before you start** this assignment, watch [this video](https://youtu.be/08uylSp-CuI) to understand the logic of hypothesis testing. We use different statistical tests depending on the nature of the independent (or predictor, explanatory) variable and the dependent (or outcome, response) variable. It is important to correctly identify the type of variables involved in a hypothesis (or research question).  
 
 ---
 
+# Data  
+
+Use the [Utilities.csv](http://yesuncomm.github.io/comm3710/files/Utilities.csv) data set to complete this assignment. This data set contains a random sample of 117 utility bills for the following variables:
+
+* `month`: month (coded as a number)
+*	`day`: day of month on which bill was calculated
+*	`year`: year of bill
+*	`temp`: average temperature ($^{\circ}$F) for billing period
+*	`kwh`: electricity usage (kwh)
+*	`ccf`: gas usage (ccf)
+*	`thermsPerDay`: a numeric vector
+*	`billingDays`: number of billing days in billing period
+*	`totalbill`: total bill (in dollars)
+*	`gasbill`: gas bill (in dollars)
+*	`elecbill`: electric bill (in dollars)
+*	`notes`: notes about the billing period
+*	`donate`: (yes or no) did the person add money to their bill to be donated to Operation Fuel, a charity providing heat to families/small businesses in need
+
 # Instructions
-1. Load the [Utilities.csv](https://utah.instructure.com/files/108105204/download?download_frd=1) data set from [LA.5](https://sarakyeo.github.io/COMM-3710/LA/LA.5.html) and re-familiarize yourself with the variables. Apply your data management code from the previous assignment that created the `season` variable.
-<br>
 
-2. Use an appropriate statistical test to determine whether there is a relationship between total bill and season. Then, answer the questions below.
-<details>
-<summary>Hint</summary>
+In this assignment, we use this data to test the following hypothesis: 
 
-   First, identify the level of measurement of the independent and dependent variables. Then, use the chart below to select a statistical test.
-   <center>
-   <img src="https://sarakyeo.github.io/COMM-3710/LA/LA.6_chart.png"
-     alt="LA.6 chart"/>
-   </center>
-</details>
-      a. What statistical test did you use?
-      b. What is the test statistic and the probability value associated with that test statistic?
-      <details>
-      <summary>Hint</summary>
-      
-         The test statistics for a $\chi$-squared test, $t$-test, and ANOVA are $\chi^2$, $t$, and $F$, respectively. The probability value is $p$.
-      </details>
-      c. Is there a significant relationship between total bill and season?
-      <details>
-      <summary>Hint</summary>
-      
-         Check the $p$-value. If $p < 0.05$, then the relationship is significant.>
-      </details>
-<br>
+H1: The total monthly bill varies with season.  
+(The counterpart null hypothesis, H0: The total monthly bill stays the same across all seasons.)
 
-3. Submit the following on Canvas:
-   (a) A **.R file** containing the code used to complete this assignment. This document should include comments that explain your commands.
+Follow the steps outlined below to complete this hypothesis testing. 
+
+## Step 1 {.tabset .tabset-fade .tabset-pills}
+
+### Question 1
+
+a. Load the [Utilities.csv](http://yesuncomm.github.io/comm3710/files/Utilities.csv) data set and re-familiarize yourself with the variables. 
+b. We first need to create a variable `season` based on `month` (the same as the first part of Q7 in [LA.5](https://yesuncomm.github.io/comm3710/LA/LA.5.html)). Have the variable equal "winter" if the bill was from December, January, or February. Have the variable equal "spring" if the bill was from March, April, or May. Have the variable equal "summer" if the bill was from June, July, or August. Have the variable equal "fall" if the bill was from September, October, or November.
+
+   - Include the codes that you used to import the data and create `season` in your R file.
+   - Include the frequency table for `season` in your PDF submission.
+   
+### Hints
+
+Use the skills you learned in data management (e.g., subsetting in Q2b, LA.4) to create a new variable called `season` according to the instructions. Note that `season` is a categorical, character variable here. Also pay attention to the condition argument: for each season, the three months are combined by the logical operator "or", which translates to `|` in R (See our [Help Guide](https://rpubs.com/yesun/716728), Section 2.5).
+
+## Step 2 {.tabset .tabset-fade .tabset-pills}
+
+### Question 2
+
+Choose an appropriate statistical test to determine whether the total monthly bill varies with season. Answer these questions:  
+
+a. Which is the independent variable? Which is the dependent variable? Is the independent variable categorical or quantitative? Is the dependent variable categorical or quantitative? 
+
+b. Based on your answer above, what statistical test did you use?
+
+c. What is the **test statistic** and the **probability value** associated with that test statistic?
+
+d. Does total monthly bill vary significantly with season?
+
+   - Include the codes that you used for the statistical test in your R file.
+   - Include the answers to all these questions in your PDF submission.
+   
+### Hints
+#### 1. Selecting a statistical test
+First, identify whether the independent and dependent variables are quantitative/continuous or categorical (see LA.2 if you need a reminder). Then, use the chart below to select a statistical test.
+
+*Note*: You will have to replace `dataframe`, `ind_var`, and `dep_var` in the R commands listed in the chart with your own data frame, independent variable, and dependent variable names. In red are functions or arguments that should not be replaced. (Click here to see [a larger picture](https://yesuncomm.github.io/comm3710/LA/LA.6_chart.png)).
+
+<center>
+<img src="https://yesuncomm.github.io/comm3710/LA/LA.6_chart.png" alt="LA.6 chart"/>
+</center>
+
+---
+
+#### 2. Test statistics and *p*-values
+
+Second, for each test, you will need to identify and report the **test statistics and  *p*-values**. 
+
+| Hypothesis Test       | Test Statistic Name               | Test Statistic Symbol |
+|-----------------------|-----------------------------------|-----------------------|
+| Chi-squared test      | Chi-squared value                 | $\chi^2$              |
+| t-test                | *t*-value                         | $t$                   |
+| ANOVA                 | *F*-value                         | $F$                   |
+| Pearson's correlation | Pearson's correlation coefficient | $r$                   |
+
+The images below identify the test statistics and *p*-values in R output. Be sure to report the correct values. If $p < 0.05$, then we conclude that the relationship is statistically significant.
+
+For Chi-square:   
+<img src="https://sarakyeo.github.io/COMM-3710/LA/LA.6_chisq.png" alt="LA.6 chi-sq output"/>
+
+For t test:   
+<img src="https://sarakyeo.github.io/COMM-3710/LA/LA.6_t-test.png" alt="LA.6 t-test output"/>
+
+For ANOVA:  
+<img src="https://sarakyeo.github.io/COMM-3710/LA/LA.6_ANOVA.png" alt="LA.6 ANOVA output"/>
+
+For correlation:  
+<img src="https://sarakyeo.github.io/COMM-3710/LA/LA.6_cor.png" alt="LA.6 cor output"/>
+
+## Step 3
+Submit the following on Canvas:
+
+   (a) A **.R file** containing all the codes used to complete this assignment. This document should include comments that explain your commands.
    (b) A **PDF file** containing the answers to each question--clearly label the answers with the question number.
+
+# Resources
+|       I need help with...       |                    Link                    |
+|:--------------------------------|:-------------------------------------------|
+| The basics of R                 | https://rpubs.com/yesun/Comm3710_helpwithR |
+|                                | https://sarakyeo.github.io/COMM-3710-bookdown/docs/ |
+| Hypothesis testing              | https://youtu.be/08uylSp-CuI               |
+| Analysis of variance (ANOVA)    | https://youtu.be/2uQCUBtqCfM               |
+| Chi-square test of independence | https://youtu.be/Dnlp9vswwEk               |
+| Independent samples *t*-test    | https://youtu.be/ANMuuq502rE?t=590         |
+| Correlation                     | https://youtu.be/lf4HfHx2ASs               |
+| | |
