@@ -80,7 +80,7 @@ To continue with the example on Facebook use, the table for this question will l
 
 Independent and dependent variables are specific to your hypothesis or RQ. For example, in H1, Facebook use is an IV, as we theorize that more time on Facebook leads to lower self-esteem (IV causes DV). But in RQ1, the same variable of Facebook use is the DV, as we are interested in whether it varies with the participant's nationality (DV varies with IV). 
 
-To push your thinking a bit further-- For H1, someone else could have a different theory: People with lower self-esteem will then spend more time on Facebook. In this case, the IV will be self-esteem, which causes variations in the time spent on Facebook per week. In our current correlation test, we will not be able to determine which theory is correct. But in your work, it is still important to identify the IVs and DVs of your hypotheses based on your own theorizing.  
+To push your thinking a bit further-- For H1, someone else could have a different theoretical argument: People with lower self-esteem will then spend more time on Facebook. In this case, the IV will be self-esteem, which causes variations in the time spent on Facebook per week. In our current correlation test, we will not be able to determine which theoretical argument is correct (i.e., whether FB use lowers self-esteem, or low self-esteem leads to more FB use). But in your work, it is still important to identify the IVs and DVs of your hypotheses based on your own theorizing.  
 
 ---
 
@@ -117,13 +117,13 @@ b. Examine the identified variables by running frequency and looking up at their
 | ... | ... | ...|
 | | | 
 
-c. Inspect your results and briefly answer these questions: Are all the values in a normal range? Are there special values/categories that have caught your attention, and you are unsure how they may affect your future analyses?
+c. For each variable, inspect your results and briefly answer these questions: Are all the values in a normal range? Are there special values/categories that have caught your attention, and you are unsure how they may affect your future analyses?
 
 #### Hint
 
 a. For example, there are three questions relevant to "Facebook use": 1) the number of hours per day spent on facebook, 2) the number of days per week the participant checks Facebook, and 3) and the amount of attention the participant pays to the Facebook content (on a 5-point scale). In the data, these questions are recorded under the variable names `FBhours`, `FBdays`, and `FBattention` respectively. 
 
-  For "nationality", let's say there are also two relevant questions: Citizenship (of which country one is a legal citizen, `citizen`), and residence (in which country the participants lives in the past 5 years, `residence`). Both questions are potentially relevant measures of the general idea of "nationality". 
+  For "nationality", let's say there are also two relevant questions: Citizenship (of which country one is a legal citizen, `citizen`), and residence (in which country the participants lived in the past 5 years, `residence`). Both questions are potentially relevant measures of the general idea of "nationality". 
 
   For self-esteem, there is only one measure `esteem` (a 5-point scale).
 
