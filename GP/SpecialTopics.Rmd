@@ -124,7 +124,7 @@ range(week_new$temp)
 sum(week_new$temp) # sum of all the temperature readings
 ```
 
-If you don't want to avoid creating new objects, you can also directly apply `mean()` to what is filtered out by `na.omit()`, as follows:  
+If you want to avoid creating new objects, you can also directly apply `mean()` to what is filtered out by `na.omit()`, as follows:  
 
 ```{r}
 mean(na.omit(week)$temp)
