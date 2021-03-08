@@ -132,17 +132,18 @@ mean(na.omit(week)$temp)
 
 
 ---
-You may have noticed that running `mean(week_new$temp)` or `mean(na.omit(week)$temp)` returned a different result than `mean(week$temp, na.rm = TRUE)`. Why is it?
+You may have noticed that running `mean(week_new$temp)` or `mean(na.omit(week)$temp)` returned a different result than what we did with the first approach-- `mean(week$temp, na.rm = TRUE)`. Why is it?
 
 <details>
 <summary>Answer</summary>
-  `na.omit()` removes all the observations with a missing value -- so observations for both Tuesdays and Thursdays are excluded. On the other hand, `(, na.rm = TRUE)` only ignores the NA for the given variable. So `mean(week_new$temp)` or equivalently `mean(na.omit(week)$temp)` computes the mean temperature based on 5 observations, whereas `mean(week$temp, na.rm = TRUE)` computes the mean based on 6 observations. 
+  `na.omit()` removes all the observations with a missing value -- so observations for both Tuesdays and Thursdays are excluded. On the other hand, `(, na.rm = TRUE)` only ignores the NAs for the variable being analyzed. So `mean(week$temp, na.rm = TRUE)` computes the mean based on 6 observations-- after excluding the NA for `temp` only. In contrast, `mean(week_new$temp)` or equivalently `mean(na.omit(week)$temp)` computes the mean temperature based on 5 observations after removing NAs for both `temp` and `mile`, even though only `temp` is being analyzed here.
+  
 </details>
 <br>
 
 ```
 Try it on your own:   
-What if we want to get the average of miles you ran per day for the week?
+What if we want to get the average of miles run per day for the week?
 
 ```
 <details>
@@ -173,9 +174,9 @@ mean(na.omit(week)$mile)
 
 ## Turning values into `NA` 
 
-Sometimes a response is recorded, but the response category is of little meaning to the goal of your analysis. In such cases you may want such responses to be excluded from the analysis. 
+Sometimes a response is recorded by researchers in a survey, but the response category is of little meaning to the goal of your analysis. In such cases you may want to exclude such responses from the analysis. 
 
-For example, in a variable assessing the public's attitude toward Covid vaccination, where "1 = strongly oppose" and "5 = strongly support", but the survey also offered these categories that participants can choose:  
+For example, in a survey assessing the public's attitude toward Covid vaccination, where "1 = strongly oppose" and "5 = strongly support", the researchers also offered these categories that participants could choose:  
     -  "77 = No opinion"   
     -  "88 = Unsure/undecided"  
     -  "99 = I don't know anything about the topic"    
