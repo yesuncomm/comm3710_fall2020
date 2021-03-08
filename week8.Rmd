@@ -43,7 +43,7 @@ However, although most employers would like you to be familiar with basic statis
 The figure below illustrates the "central dogma" of statistics. Using statistics, we seek to learn more about the **population** of interest. However, we rarely (if ever!) have access to every unit in a population. Therefore, we take a representative sample, or a representative subset of the population, and use this sample to **describe** (descriptive statistics) and make **inferences/predictions/generalizations** (inferential statistics) about the population.
 
 <center>
-<img src="https://sarakyeo.github.io/images/central-dogma-stats.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/central-dogma-stats.png"/>
 </center>
 <br>
 
@@ -70,7 +70,7 @@ Review the figure above. The central dogma has a population and a sample. **Stat
 In general, there are two types of statistics: **descriptive** and **inferential statistics**. The figure below highlights the differences between these two types and provides examples of questions that researchers might ask using descriptive and inferential statistics. In the next sections, we will discuss these types of statistics in more detail.
 
 <center>
-<img src="https://sarakyeo.github.io/images/desc-infer-stats.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/desc-infer-stats.png"/>
 </center>
 <br>
 
@@ -118,7 +118,7 @@ We can use descriptive statistics to:
 2. Summarize data
 
 <center>
-<img src="https://sarakyeo.github.io/images/types-desc-stats.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/types-desc-stats.png"/>
 </center>
 <br>
 
@@ -126,7 +126,7 @@ We can use descriptive statistics to:
 A frequency distribution is a description of the number of times the various attributes of a variable are observed in a sample. This can be show in tables or graphs (histograms, stem-and-leaf plots). Watch the short video below for an explanation of **frequency distribution tables, histograms, and stem-and-leaf plots**.
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/451893553" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BxA3o3fF2Jo" frameborder="0" data-external="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <br>
 
@@ -143,7 +143,7 @@ Central tendency refers to the middle values of groups, while variability refers
 The mean ($\bar{x}$) is the "average" of the data points of a variable. In our example of IQ scores in Class A and Class B (above), we calculate the mean by adding all the scores in each class and dividing by the number of students in each class. In mathematical notation, the formula for calculating a mean would be:
 
 <center>
-<img src="https://sarakyeo.github.io/images/mean.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/mean.png"/>
 </center>
 <br>
 
@@ -152,7 +152,7 @@ You can think of the mean as a **balance point**.
 Imagine each person's score is a 1-lb weight placed at the score's position on a see-saw. Let's say we have a 200-meter long see-saw and the mean is 110 m. And we have 3 people in our sample with scores of 93 m, 106 m, and 131 m.
 
 <center>
-<img src="https://sarakyeo.github.io/images/mean-balance.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/mean-balance.png"/>
 </center>
 <br>
 
@@ -161,7 +161,7 @@ Because of this, the mean can be badly affected by outliers, which can make the 
 For example, the mean of annual income in the U.S. (the point marked by the red triangle in the figure below) is skewed by the very rich among us, e.g., BIll Gates (outliers)!
 
 <center>
-<img src="https://sarakyeo.github.io/images/skewed-mean.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/skewed-mean.png"/>
 </center>
 <br>
 
@@ -173,7 +173,7 @@ The median is the second measure of central tendency that we will discuss. The m
 The median is also known as the **50th percentile**. When the data are ranked, the median (or 50th percentile) is the point at which 50\% of the cases are above and 50\% of the cases are below. Watch the video below for an explanation of how to calculate the median and the relationship between the mean and median.
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/451893484" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S_Yb3t5TtCE" frameborder="0" data-external="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <br>
 
@@ -226,7 +226,7 @@ Lower limit $= Q1 - 1.5 \times (IQR)$
 Upper limit $= Q3 + 1.5 \times (IQR)$
 
 <center>
-<img src="https://sarakyeo.github.io/images/IQR.PNG"/>
+<img src="https://yesuncomm.github.io/comm3710/images/IQR.png"/>
 </center>
 <br>
 
@@ -238,7 +238,7 @@ Variance measures the spread or dispersion of individual cases around the mean i
 When the variance is larger, this means that individual cases are farther away from the mean. A smaller variance, on the other hand, means that individual cases are closer to the mean.
 
 <center>
-<img src="https://sarakyeo.github.io/images/variance01.PNG"/>
+<img src="https://yesuncomm.github.io/comm3710/images/variance01.PNG"/>
 </center>
 <br>
 
@@ -259,7 +259,7 @@ $$SD = \sqrt{\frac{1}{n-1}\sum^{n}_{i = 1}(x_i - \bar{x})^2}$$
 In the video below, we will work through an example step-by-step and calculate its variance and standard deviation.
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/451980713" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WPwAH7Pfpco" frameborder="0" data-external="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <br>
 
@@ -281,10 +281,10 @@ In a box plot, we can show...
 Using the IQ scores example again, here are the data and a corresponding box plot showing the various descriptive statistics.
 
 <center>
-<img src="https://sarakyeo.github.io/images/IQ-data.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/IQ-data.png"/>
 <br>
 
-<img src="https://sarakyeo.github.io/images/box-plot.PNG"/>
+<img src="https://yesuncomm.github.io/comm3710/images/box-plot.PNG"/>
 </center>
 <br>
 
