@@ -321,10 +321,14 @@ div.tocify {
 </ol>
 <p><br></p>
 <ol start="2" style="list-style-type: decimal">
-<li>Conduct data management on these variables: <code>tvnaat</code>, <code>tvhardat</code>, <code>tvsoftat</code>, <code>sex</code>, <code>marit</code>.
+<li>Conduct data management on these variables: <code>tvnaat</code>, <code>tvhardat</code>, <code>tvsoftat</code>, <code>sex</code>, <code>marit</code>. As always, check frequency before and after you recode a variable. Make sure you create new variables instead of changing the original ones directly.
 <ol style="list-style-type: lower-alpha">
 <li>Recode values of <code>99</code> as <code>NA</code> in <code>tvnaat</code>, <code>tvhardat</code>, and <code>tvsoftat</code>.</li>
-<li>Recode <code>sex</code> and <code>marit</code> as factors.</li>
+<li>Recode <code>sex</code> and <code>marit</code> into character variables with textual categories.
+<ul>
+<li>Both <code>sex</code> and <code>marit</code> are numerical variables now. Are there values that you need to turn into <code>NA</code>s?</li>
+<li>The new variables should have meaningful textual categories (e.g., “male” and “female” for the variable based on <code>sex</code>).</li>
+</ul></li>
 </ol></li>
 </ol>
 <p><br></p>

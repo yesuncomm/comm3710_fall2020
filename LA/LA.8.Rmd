@@ -60,10 +60,12 @@ A data frame with 465 observations on the following variables^[`99` = “Don’t
 
 <br>
 
-2. Conduct data management on these variables: `tvnaat`, `tvhardat`, `tvsoftat`, `sex`, `marit`.
+2. Conduct data management on these variables: `tvnaat`, `tvhardat`, `tvsoftat`, `sex`, `marit`. As always, check frequency before and after you recode a variable. Make sure you create new variables instead of changing the original ones directly. 
       a. Recode values of `99` as `NA` in `tvnaat`, `tvhardat`, and `tvsoftat`.
-      b. Recode `sex` and `marit` as factors.
-
+      b. Recode `sex` and `marit` into character variables with textual categories. 
+          - Both `sex` and `marit` are numerical variables now. Are there values that you need to turn into `NA`s?
+          - The new variables should have meaningful textual categories (e.g., "male" and "female" for the variable based on `sex`).   
+      
 <br>
 
 3. Find the mean attention to national TV news for males and females.
