@@ -15,7 +15,7 @@ urlcolor: blue
 Recall the differences between descriptive and inferential statistics:
 
 <center>
-<img src="https://sarakyeo.github.io/images/desc-infer-stats.png"/>
+<img src="https://yesuncomm.github.io/comm3710/images/desc-infer-stats.png"/>
 </center>
 <br>
 
@@ -34,7 +34,7 @@ This week, we will discuss four common inferential statistical tests:
 Before doing so, we need to know how some terms used to discuss hypothesis testing and how to conduct hypothesis testing. We also need to know how which hypothesis test to use. The flowchart below can be used to guide your choice of hypothesis test.
 
 <center>
-<img src="https://sarakyeo.github.io/images/LA.6_chart.png"/>
+<img src="https://yesuncomm.github.io/comm3710/LA/LA.6_chart.png"/>
 </center>
 <br>
 
@@ -57,8 +57,9 @@ When conducting hypothesis tests, we use the following steps in the order listed
 >| Independent samples $t$-test | $t$ |
 >| Chi-square test of independence | $\chi^2$ |
 >| Pearson's correlation | Pearson's $r$ |
+>| One-way ANOVA | $F$ |
 
-4. Determine the $p$-value; each hypothesis test you conduct will result in a test statistic and a $p$-value. The $p$-value is the probability of obtaining a test statistic assuming your null hypothesis is true. Another way to phrase this is that $p$-value is the probability of obtaining the results you did (or more extreme results) given that $H_0$ is true.
+4. Determine the $p$-value; each hypothesis test you conduct will result in a test statistic and a $p$-value. The $p$-value is the probability of obtaining a test statistic assuming your null hypothesis is supported. Another way to phrase this is the $p$-value is the probability of obtaining the results you did (or more extreme results) given that $H_0$ is true.
 5. Compare $p$-value to $\alpha$.
    - If $p \leq \alpha$, we **reject** the null hypothesis ($H_0$).
    - If $p > \alpha$, we **fail to reject** the null hypothesis ($H_0$).
@@ -68,7 +69,7 @@ Using hypothesis testing, researchers typically hope to "nullify" their null hyp
 The video below walks through an example of how to conduct a hypothesis test.
 
 <center>
-<iframe width="560" height="315" src="https://player.vimeo.com/video/452316703" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RlR9PgDAYkA" data-external="1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <br>
 
@@ -78,7 +79,7 @@ The video below walks through an example of how to conduct a hypothesis test.
 When conducting hypothesis tests, 2 types of errors can occur. These are **Type I** and **Type II errors**. The table below provides an explanation and an easy way to remember the types of errors that can occur during hypothesis testing.
 
 <center>
-<img src="https://sarakyeo.github.io/images/errors-NHST.PNG"/>
+<img src="https://yesuncomm.github.io/comm3710/images/errors-NHST.PNG"/>
 </center>
 <br>
 
@@ -201,7 +202,7 @@ Since we usually use $\alpha = 0.05$, let's set our significance level to 0.05.
 Assume we have the following data:
 
 <center>
-<img src="https://sarakyeo.github.io/images/t-test_data.PNG"/>
+<img src="https://yesuncomm.github.io/comm3710/images/t-test_data.PNG"/>
 </center>
 <br>
 
@@ -286,7 +287,7 @@ $$SS_{total} = \Sigma{x^2}-\frac{G}{N}, df_{total} = N-1$$
 $$SS_{between} = \frac{\Sigma{T^2}}{n} - \frac{G^2}{N}, df_{between} = k-1$$
 $$SS_{within} = \Sigma{SS_{inside \space each \space treatment}, df_{within} = N-k}$$
 $$F = \frac{MS_{between}}{MS_{within}} \space where \space each \space MS = \frac{SS}{df}$$
-Follow the [step-by-step approach in your textbook](https://online.vitalsource.com/#/books/9780190861940/epubcfi/6/50%5B%3Bvnd.vst.idref%3Dc17%5D!/4/2/20/2/2%5Bhead647%5D%400:0) to calculate a test statistic. Remember that your data are different from those in the textbook.
+Follow the step-by-step approach in your textbook to calculate a test statistic. Remember that your data are different from those in the textbook.
 
 The test statistic that is calculated in an ANOVA is the $F$ value.
 
@@ -335,7 +336,7 @@ The basic purpose of a correlation is to determine the relationship between two 
 As you know, there are various types of linear relationships. Below, the graph farthest to the left shows no relationship between the variables, $X$ and $Y$. The middle graph shows a positive relationship and the graph on the right shows a negative relationship.
 
 <center>
-<img src="https://sarakyeo.github.io/images/correlation.PNG"/>
+<img src="https://yesuncomm.github.io/comm3710/images/correlation.PNG"/>
 </center>
 <br>
 
