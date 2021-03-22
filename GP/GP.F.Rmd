@@ -1,5 +1,5 @@
 ---
-title: "GP.F: Univariate Graphs (10 points)"
+title: "GP.F: Creating Graphs (15 points)"
 pagetitle: "COMM 3710: GP.F"
 output:
   html_document:
@@ -10,20 +10,53 @@ urlcolor: blue
 ---
 
 # Resources
-If you need a reminder about graphing one variable at a time in R, watch this [video](https://youtu.be/mwLyXHfCPdE).
 
-There are a variety of conventional ways to visualize data---tables, histograms, bar graphs, etc. Now that your data have been managed, it is time to graph your variables one at a time and examine both center and spread.
+- [ggplot2 Tutorial](https://yesuncomm.github.io/comm3710/LA/ggplot.html)
+- [COMM 3710: Getting Started with R](https://sarakyeo.github.io/COMM-3710-bookdown/docs/index.html)
+- [R Graphics Cookbook](https://r-graphics.org/)
+- [Video 06](https://youtu.be/mwLyXHfCPdE)
+- [Video 07](https://youtu.be/IZoCbCQRmUE)
 
 ---
 
 # Instructions
-Include univariate graphs of your two main constructs. These main constructs, or variables, should be managed (from GP.D).
+There are a variety of ways to visualize data--tables, histograms, bar graphs, etc. Now that your data have been managed, it is time to create both univariate and bivariate graphs. We will use the `ggplot2` package to create graphs.
 
-- Each graph should contain clearly labeled x-axes, y-axes, and, if applicable, legends.
-- Each figure should also have a caption below it.
+- A **univariate** graph is a visualization of one variable. A histogram is a type of univariate graph.
+- A **bivariate** graph is a visualization of the relationship between two variables. A scatter plot is a type of bivariate graph.
 
-Write a few sentences describing what your graphs reveal in terms of shape, spread, and center (if variable is quantitative) and most/least frequent categories if variable is categorical.
+## Step 1
+Load the following packages in R:
 
-**Submit the graphs and descriptions as a PDF file on Canvas.**
+- `tidyverse` (remember that this includes the `ggplot2` package)
+- `descr`
 
-**Submit all R commands and comments used for this assignment as a .R file on Canvas.**
+## Step 2
+Copy Table 2 from [GP.E](https://yesuncomm.github.io/comm3710/GP/GP.E.html) into your PDF submission.
+
+Using `ggplot2`, create histograms of all your independent and dependent variables. Include the graphs in your PDF submission and all R commands and annotations in your script.
+
+Each graph should contain:
+
+- Clear and relevant x-axis labels
+- Clear and relevant y-axis labels
+- Clear and relevant titles
+- If applicable, clear and relevant legends
+
+
+## Step 3
+Revisit your submission for [GP.E](https://yesuncomm.github.io/comm3710/GP/GP.E.html) and list your hypotheses and/or research questions (RQs) in your PDF submission.
+
+For each hypothesis and/or research question, construct a bivariate graph that shows the relationship between your independent (IV) and dependent variable (DV). Again, each graph should contain:
+
+- Clear and relevant x-axis labels
+- Clear and relevant y-axis labels
+- Clear and relevant titles
+- If applicable, clear and relevant legends
+
+
+## Submission
+Submit two files on Canvas:
+
+- A **.R file** with all commands and comments. The commands in this R script must run in its entirety and in order (i.e., from top to bottom) and include commands to set the working directory, load packages, and read data into R.
+- A **PDF file** of the graphs and other required elements.
