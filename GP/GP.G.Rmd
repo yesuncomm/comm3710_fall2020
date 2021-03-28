@@ -1,5 +1,5 @@
 ---
-title: "GP.G: Bivariate Graphs (10 points)"
+title: "GP.G: Statistical Tests (15 points)"
 pagetitle: "COMM 3710: GP.G"
 output:
   html_document:
@@ -9,23 +9,63 @@ output:
 urlcolor: blue
 ---
 
+# Resources
+- [COMM 3710: Getting Started with R](https://sarakyeo.github.io/COMM-3710-bookdown/docs/index.html)
+- [Week 9 lecture content](https://yesuncomm.github.io/COMM-3710/week9.html)
+
+---
+
 # Instructions
 
-OPTIONAL: Watch this [video](https://youtu.be/IZoCbCQRmUE) about graphing relationships in R.
+## Step 1
+List your hypotheses and/or research questions (RQs) in your PDF submission.
 
-1. Construct a graph that shows the association between your explanatory/independent and outcome/dependent variables (bivariate graph).
 
-2. Write a few sentences describing what your graphs reveal.
-    <ul>
-    <li> How do you think the variables are related, if at all?
-    <li> How does this correspond with your predictions?
-    <li> Does the graph reveal anything unexpected or interesting about your relationship of interest?
-    </ul>
-    
-3. Construct a 2nd graph that shows the association between another explanatory variable and your dependent variable. Again, write a few sentences describing what your graph reveals in terms of the relationships among the variables.
+## Step 2 {.tabset .tabset-fade .tabset-pills}
+### Question
+For each hypothesis and/or RQ, determine what the appropriate statistical test is for your main two variables of interest. Your options are:
 
-4. Submit two files on Canvas:
-   <ul>
-   <li> A **.R file** with all commands and comments.
-   <li> A **PDF file** of the graphs and descriptions. Graphs should contain axes labels, captions, and, if applicable, legends.
-   </ul>
+- Independent samples *t*-test
+- Analysis of variance (ANOVA)
+- Chi-squared test of independence
+- Pearson's correlation
+
+List the hypothesis test chosen and provide a rationale for your decision (see Example tab).
+
+### Example
+**H1: The average number of hours spent on social media per week will be positively associated with higher anxiety scores.**
+
+To test H1, I will use Pearson's correlation. The independent variable, average number of hours spent on social media per week, is continuous and the dependent variable, respondents' anxiety scores, is also continuous. Therefore, Pearson's correlation is an appropriate test of this relationship.
+
+
+## Step 2
+Load your data, the necessary R packages, and run the appropriate statistical test in R.
+
+
+## Step 3 {.tabset .tabset-fade .tabset-pills}
+### Question 
+Interpret your findings and write a paragraph about each.
+
+### Sample Write-Ups {.tabset .tabset-fade}
+
+#### Independent samples *t*-tests
+An independent samples *t*-test was performed comparing the mean consistency scores of college students and individuals diagnosed with schizophrenia. As predicted, the schizophrenics (M = .76, SD = .20, N = 100) were more illogical than the college students (M = .17, SD = .13, N = 97), *t*(17) = 7.53, *p* < .001, two-tailed.
+
+#### Analysis of variance (ANOVA)
+When examining the association between current number of cigarettes smoked (quantitative response) and past year nicotine dependence (categorical explanatory), an analysis of variance (ANOVA) revealed that among daily, young adult smokers (my sample), those with nicotine dependence reported smoking significantly more cigarettes per day (M = 14.6, SD = 9.15) compared to those without nicotine dependence (M = 11.4, SD = 7.43), *F*(1, 1313) = 44.68, *p* =.0001.
+
+#### Chi-squared test of independence
+When examining the association between lifetime major depression (categorical response) and past year nicotine dependence (categorical explanatory), a chi-square test of independence revealed that among daily, young adults smokers (my sample), those with past year nicotine dependence were more likely to have experienced major depression in their lifetime (36.2%) compared to those without past year nicotine dependence (12.7%), *$\chi$^2^* = 88.60, *p* = 0001.
+
+#### Correlation
+Among daily, young adult smokers (my sample), the correlation between number of cigarettes smoked per day (quantitative) and number of nicotine dependence symptoms experienced in the past year (quantitative) was 0.17 (*p* = .0001), suggesting that only 3% (i.e., 0.17^2) of the variance in number of current nicotine dependence symptoms can be explained by number of cigarettes smoked per day.
+
+
+## Submission
+Submit the following on Canvas:
+
+- A **.R file** with all commands and comments. The commands in this R script must run in its entirety and in order (i.e., from top to bottom) and include commands to set the working directory, load packages, and read data into R.
+- A **PDF file** of the graphs and other required elements.
+   - Write up your findings from all your hypothesis tests and submit your assignment as a **PDF** on Canvas.
+   - Clean up your R code and submit the **.R file**. This file should be neat and include comments.
+
